@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/colorPrimary">
+
+    <!-- Logo Image at the Center Top -->
+  <!-- Replace with your logo resource -->
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="800px"
+        android:layout_height="800px"
+        android:src="@drawable/mindfullearn"
+        android:scaleType="centerCrop"
+        android:alpha="0.1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+    <!-- First Text -->
+    <TextView
+        android:id="@+id/firstTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+
+        android:gravity="center"
+        android:text="Se connecter"
+        android:textColor="#62AF5A"
+        android:textSize="32sp"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/nimbussanl_bol"
+        />
+
+    <!-- Second Text -->
+    <TextView
+        android:id="@+id/secondTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="Bienvenue.\nVous nous avez manqué."
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nimbussanl_bolita"/>
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="1056px"
+        android:layout_below="@id/editText1"
+        android:layout_height="174px"
+        android:padding="16dp"
+        android:layout_marginTop="30dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#403F3E43"
+        android:background="@drawable/textfields_for_login_register"/>
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="1056px"
+        android:layout_below="@id/secondTextView"
+        android:layout_height="174px"
+        android:padding="16dp"
+        android:layout_marginTop="80dp"
+        android:hint="Email"
+        android:textColorHint="#403F3E43"
+        android:background="@drawable/textfields_for_login_register"/>
+
+    <!-- Login Button -->
+    <TextView
+        android:id="@+id/thirdTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_below="@id/editText2"
+
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="114dp"
+
+        android:fontFamily="@font/nimbussanl_bol"
+        android:gravity="center"
+        android:text="Oublier votre mot de passe?"
+        android:textColor="#62AF5A"
+        android:textSize="14sp" />
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="1056px"
+        android:layout_height="55dp"
+        android:layout_below="@+id/thirdTextField"
+
+        android:layout_alignParentStart="true"
+        android:background="@color/colorsender"
+        android:layout_marginStart="5dp"
+
+        android:fontFamily="@font/nimbussanl_bol"
+
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/colorsender"
+        android:textSize="20sp" />
+
+    <!-- Register Button -->
+
+
+
+</RelativeLayout>

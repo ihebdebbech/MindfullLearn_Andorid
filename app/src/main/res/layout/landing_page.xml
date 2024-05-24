@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true">
+
+    <RelativeLayout
+        android:id="@+id/logoImageView"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            app:cardCornerRadius="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+
+                android:layout_width="250dp"
+                android:layout_height="290dp"
+                android:layout_marginTop="-40dp"
+
+                android:src="@drawable/mindfullearn" />
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/firstTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoImageView"
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/nimbussanl_bol"
+        android:gravity="center"
+        android:text="Change your Life With MindFulLearn"
+        android:textColor="#62AF5A"
+        android:textSize="24sp" />
+
+    <!-- Second Text -->
+    <TextView
+        android:id="@+id/secondTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/firstTextView"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="-17dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="Join a vibrant community where everyone strike towrds the same goal which is a better life and a better future"
+        android:textColor="@color/colortext1"
+        android:textSize="23sp" />
+
+    <LinearLayout
+        android:layout_width="309dp"
+        android:layout_height="119dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="22dp"
+        android:orientation="horizontal"
+
+        >
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="147dp"
+            android:layout_height="55dp"
+            android:layout_below="@id/secondTextView"
+            android:layout_alignParentStart="true"
+
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+
+            android:background="@drawable/landingpageloginbutton"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Login"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorsender" />
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="147dp"
+            android:layout_height="55dp"
+            android:layout_below="@id/secondTextView"
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@id/loginButton"
+            android:background="@drawable/landingpageregisterbutton"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Register"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="@color/colortext1" />
+    </LinearLayout>
+</RelativeLayout>

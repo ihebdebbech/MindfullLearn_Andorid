@@ -1,0 +1,9 @@
+<!-- res/drawable/white_button_with_stroke.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#FFFFFF" />
+    <stroke
+        android:width="2dp"
+        android:color="#5CB25D" />
+    <corners android:radius="50dp" />
+</shape>

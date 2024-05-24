@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ViewModel.ProfileFragment"
+    android:orientation="horizontal"
+
+
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:gravity="center"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="800px"
+        android:layout_height="800px"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0.1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mindfullearn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/ellipse_5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+
+        android:layout_gravity="center"
+
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="125dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:background="@drawable/circle"
+        android:padding="2dp"
+        android:shape="oval"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="130dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="73dp"
+
+        android:orientation="horizontal"
+        app:cardCornerRadius="250dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/coachimg"
+            android:layout_width="140dp"
+
+            android:layout_height="140dp"
+
+
+            app:srcCompat="@drawable/coachdevie"
+
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorsender"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ellipse_5" />
+
+    <TextView
+        android:id="@+id/firstname"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:text="FirstName"
+        android:textSize="13sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorSecondarydarker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullname" />
+
+    <TextView
+        android:id="@+id/lastnametextt"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="19dp"
+        android:text="LastName"
+        android:textSize="13sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorSecondarydarker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstname" />
+
+    <TextView
+        android:id="@+id/emailtextt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="19dp"
+        android:text="Email"
+        android:textSize="13sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorSecondarydarker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastnametextt" />
+
+    <TextView
+        android:id="@+id/dateofbirthtextt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="19dp"
+        android:text="date of birth"
+        android:textSize="13sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorSecondarydarker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailtextt" />
+
+    <Button
+        android:id="@+id/modifierbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="200dp"
+        android:background="@color/colorsender"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="modifie your data"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorsender"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullname" />
+
+    <TextView
+        android:id="@+id/firstnameinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="35dp"
+        android:text="TextView"
+        android:textSize="13sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorSecondarydarker"
+        app:layout_constraintStart_toEndOf="@+id/firstname"
+        app:layout_constraintTop_toBottomOf="@+id/fullname" />
+
+    <TextView
+        android:id="@+id/lastnameinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="TextView"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorSecondarydarker"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/lastnametextt"
+        app:layout_constraintTop_toBottomOf="@+id/firstnameinfo" />
+
+    <TextView
+        android:id="@+id/emailinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="22dp"
+        android:text="TextView"
+        android:textSize="13sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorSecondarydarker"
+        app:layout_constraintStart_toEndOf="@+id/emailtextt"
+        app:layout_constraintTop_toBottomOf="@+id/lastnameinfo" />
+
+    <TextView
+        android:id="@+id/dateofbirthinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="TextView"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorSecondarydarker"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/dateofbirthtextt"
+        app:layout_constraintTop_toBottomOf="@+id/emailinfo" />
+
+    <Button
+        android:id="@+id/updateconfirmer"
+        android:layout_width="160dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="22dp"
+        android:text="update"
+        android:visibility="gone"
+        android:textSize="13sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorSecondarydarker"
+        android:background="@color/colorsender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editdateofbirth" />
+
+    <EditText
+        android:id="@+id/editfirstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="firstname"
+        android:inputType="text"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/firstname"
+        app:layout_constraintTop_toBottomOf="@+id/fullname" />
+
+    <EditText
+        android:id="@+id/editlastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="lastname"
+        android:inputType="text"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/lastnametextt"
+        app:layout_constraintTop_toBottomOf="@+id/editfirstname" />
+
+    <EditText
+        android:id="@+id/editemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="text"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/emailtextt"
+        app:layout_constraintTop_toBottomOf="@+id/editlastname" />
+
+    <EditText
+        android:id="@+id/editdateofbirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="dateofbirth"
+        android:inputType="text"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/dateofbirthtextt"
+        app:layout_constraintTop_toBottomOf="@+id/editemail" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

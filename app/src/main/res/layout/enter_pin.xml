@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="800px"
+        android:layout_height="800px"
+        android:src="@drawable/ecolinklogo"
+        android:scaleType="centerCrop"
+        android:alpha="0.1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+    <!-- First Text -->
+    <TextView
+        android:id="@+id/firstTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+
+        android:gravity="center"
+        android:text="Enter pin"
+        android:textColor="#62AF5A"
+        android:textSize="32sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nimbussanl_bol"
+        />
+
+    <!-- Second Text -->
+    <TextView
+        android:id="@+id/secondTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="Saisissez le code PIN que nous vous avons envoyé par e-mail."
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nimbussanl_bolita"/>
+
+    <ImageView
+        android:id="@+id/lockImageView"
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:src="@drawable/pintpint"
+        android:layout_below="@id/secondTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="60dp"/>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="1056px"
+        android:layout_below="@id/lockImageView"
+        android:layout_height="174px"
+        android:padding="16dp"
+        android:layout_marginTop="80dp"
+        android:hint="PIN"
+        android:textColorHint="#403F3E43"
+        android:background="@drawable/textfields_for_login_register"/>
+
+
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="1056px"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+
+
+        android:layout_marginTop="24dp"
+
+
+        android:background="@drawable/landingpageloginbutton"
+        android:fontFamily="@font/nimbussanl_reg"
+        android:text="Reset"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:layout_centerVertical="true"/>
+
+    <!-- Register Button -->
+
+
+
+</RelativeLayout>

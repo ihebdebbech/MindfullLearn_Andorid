@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ProfileFragment"
+        android:icon="@drawable/profileicon"
+        />
+    <item
+        android:id="@+id/MapsFragment"
+        android:icon="@drawable/mapicon"
+         />
+    <item
+        android:id="@+id/conversationsFragment"
+        android:icon="@drawable/chatting_icon"
+         />
+
+</menu>

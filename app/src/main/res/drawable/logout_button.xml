@@ -1,0 +1,8 @@
+<!-- res/drawable/green_button_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#E53529" /> <!-- Change to your desired green color -->
+    <corners android:radius="50dp" /> <!-- Set the corner radius to 40dp -->
+</shape>
+
+

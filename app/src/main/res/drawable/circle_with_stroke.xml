@@ -1,0 +1,27 @@
+<!-- circle_with_stroke.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Transparent Circle -->
+    <item>
+        <shape
+            android:shape="oval">
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+
+    <!-- Stroke -->
+    <item
+        android:right="2dp"
+        android:left="2dp"
+        android:top="2dp"
+        android:bottom="2dp">
+        <shape
+            android:shape="oval">
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:width="10dp"
+                android:color="#3F3E43" />
+        </shape>
+    </item>
+
+</layer-list>

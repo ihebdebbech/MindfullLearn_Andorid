@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/colorPrimary">
+
+    <!-- Logo Image at the Center Top -->
+    <!-- Replace with your logo resource -->
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="800px"
+        android:layout_height="800px"
+        android:src="@drawable/mindfullearn"
+        android:scaleType="centerCrop"
+        android:alpha="0.12"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+    <!-- First Text -->
+
+    <!-- Second Text -->
+    <TextView
+        android:id="@+id/secondTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+
+        android:gravity="center"
+        android:text="create your account and explore our vast world full of suprises"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nimbussanl_bolita"/>
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="1056px"
+        android:layout_below="@id/emailtext"
+        android:layout_height="174px"
+        android:padding="16dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="30dp"
+        android:hint="Password"
+        android:textColorHint="#403F3E43"
+        android:background="@drawable/textfields_for_login_register"/>
+    <EditText
+        android:id="@+id/firstnametext"
+        android:layout_width="1056px"
+        android:layout_below="@id/secondTextView"
+        android:layout_height="174px"
+        android:padding="16dp"
+        android:layout_marginTop="30dp"
+        android:hint="first name"
+        android:inputType="textPassword"
+        android:textColorHint="#403F3E43"
+        android:background="@drawable/textfields_for_login_register"/>
+
+    <EditText
+        android:id="@+id/emailtext"
+        android:layout_width="1056px"
+        android:layout_below="@id/lastnametext"
+        android:layout_height="174px"
+        android:padding="16dp"
+        android:layout_marginTop="30dp"
+        android:hint="Email"
+        android:textColorHint="#403F3E43"
+        android:background="@drawable/textfields_for_login_register"/>
+
+    <EditText
+        android:id="@+id/lastnametext"
+        android:layout_width="1056px"
+        android:layout_below="@id/firstnametext"
+        android:layout_height="174px"
+        android:padding="16dp"
+        android:layout_marginTop="30dp"
+        android:hint="lastname"
+        android:textColorHint="#403F3E43"
+        android:background="@drawable/textfields_for_login_register"/>
+    <EditText
+        android:id="@+id/dateofbirthtext"
+        android:layout_width="1056px"
+        android:layout_below="@id/spinnerUserType"
+        android:layout_height="174px"
+        android:padding="16dp"
+        android:layout_marginTop="10dp"
+        android:hint="date of birth"
+        android:textColorHint="#403F3E43"
+        android:background="@drawable/textfields_for_login_register"/>
+
+    <Spinner
+        android:id="@+id/spinnerUserType"
+        android:layout_width="1056px"
+        android:layout_height="174px"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/Password"
+        android:padding="16dp"
+        android:background="@drawable/custom_spinner_background"
+        android:entries="@array/user_types"
+        />
+
+    <TextView
+        android:id="@+id/thirdTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_below="@id/dateofbirthtext"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="174dp"
+        android:fontFamily="@font/nimbussanl_bol"
+        android:gravity="center"
+        android:text="Vous avez déja un compte?"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="1056px"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+
+
+        android:layout_marginTop="24dp"
+
+
+        android:background="@drawable/landingpageloginbutton"
+        android:fontFamily="@font/nimbussanl_reg"
+        android:text="SignUp"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorSecondarydarker"
+        android:layout_centerVertical="true"/>
+
+    <!-- Register Button -->
+
+
+
+</RelativeLayout>

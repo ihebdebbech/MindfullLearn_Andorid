@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!-- Logo Image at the Center Top -->
+    <!-- Replace with your logo resource -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+       >
+
+    <!-- First Text -->
+    <TextView
+        android:layout_marginTop="16dp"
+        android:id="@+id/firstTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+
+        android:gravity="center"
+        android:text="Modifier profile"
+        android:textColor="#62AF5A"
+        android:textSize="32sp"
+
+        android:fontFamily="@font/nimbussanl_bol"
+        />
+
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="174px"
+            android:layout_below="@id/firstTextView"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/textfields_for_login_register"
+            android:hint="Email"
+            android:padding="16dp"
+            android:textColorHint="#403F3E43" />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        android:orientation="horizontal"
+        android:layout_below="@id/editText1"
+        android:layout_marginTop="30dp"
+        >
+        <Button
+            android:id="@+id/uploadButton"
+            android:layout_width="500px"
+            android:layout_height="55dp"
+
+
+
+
+
+
+            android:background="@drawable/specialbutton_withstroke"
+            android:fontFamily="@font/nimbussanl_reg"
+            android:text="Profile picture"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="#5CB25D"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_toEndOf="@id/uploadButton"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="match_parent"
+            android:layout_height="174px"
+            android:layout_below="@id/profileImageView"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/textfields_for_login_register"
+            android:hint="Full name"
+            android:padding="16dp"
+            android:textColorHint="#403F3E43" />
+
+        <Spinner
+        android:id="@+id/spinnerUserType"
+        android:layout_width="match_parent"
+        android:layout_height="174px"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/editText5"
+        android:padding="16dp"
+            android:entries="@array/user_types"
+        android:background="@drawable/custom_spinner_background"
+        />
+        <TextView
+            android:id="@+id/datebirth"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_below="@id/editText2"
+
+            android:layout_centerHorizontal="true"
+
+            android:fontFamily="@font/nimbussanl_bol"
+            android:gravity="center"
+            android:text="How old are you?"
+            android:textColor="#62AF5A"
+            android:textSize="14sp" />
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="174px"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+
+            />
+
+    <TextView
+        android:id="@+id/thirdTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_below="@id/editText2"
+
+        android:layout_centerHorizontal="true"
+
+        android:fontFamily="@font/nimbussanl_bol"
+        android:gravity="center"
+        android:text="Vous avez déja un compte?"
+        android:textColor="#62AF5A"
+        android:textSize="14sp" />
+        <EditText
+            android:id="@+id/biomodif"
+            android:layout_width="match_parent"
+            android:layout_height="250px"
+
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/textfields_for_login_register"
+            android:hint="Bio"
+            android:padding="16dp"
+            android:textColorHint="#403F3E43" />
+        <EditText
+            android:id="@+id/phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="174px"
+            android:layout_below="@id/biomodif"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/textfields_for_login_register"
+            android:hint="Phone number"
+            android:padding="16dp"
+            android:textColorHint="#403F3E43" />
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="174px"
+            android:layout_below="@id/phonenumber"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/textfields_for_login_register"
+            android:hint="Location"
+            android:padding="16dp"
+            android:textColorHint="#403F3E43" />
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/verifyaccount"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+
+        android:layout_below="@id/spinnerUserType"
+
+
+
+        android:background="@drawable/verifyaccount"
+        android:fontFamily="@font/nimbussanl_reg"
+        android:text="Verify account"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:layout_centerVertical="true"/>
+        <Button
+            android:id="@+id/changepassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+
+            android:layout_below="@id/verifyaccount"
+
+
+            android:layout_marginTop="16dp"
+            android:background="@drawable/verifyaccount"
+            android:fontFamily="@font/nimbussanl_reg"
+            android:text="Change password"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:layout_centerVertical="true"/>
+        <Button
+            android:id="@+id/deactivate"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+
+            android:layout_below="@id/spinnerUserType"
+            android:layout_marginTop="16dp"
+
+            android:background="@drawable/logout_button"
+
+            android:fontFamily="@font/nimbussanl_reg"
+            android:text="Deactivate account"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:layout_centerVertical="true"/>
+        <Button
+            android:id="@+id/modifierbutton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+
+            android:layout_below="@id/spinnerUserType"
+
+
+            android:layout_marginTop="16dp"
+            android:background="@drawable/landingpageloginbutton"
+            android:fontFamily="@font/nimbussanl_reg"
+            android:text="Modifier"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:layout_centerVertical="true"/>
+        <Button
+            android:id="@+id/returntoprofile"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+
+            android:layout_below="@id/spinnerUserType"
+
+
+            android:layout_marginTop="16dp"
+            android:background="@drawable/landingpageloginbutton"
+            android:fontFamily="@font/nimbussanl_reg"
+            android:text="Return to profile"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:layout_centerVertical="true"/>
+
+    <!-- Register Button -->
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

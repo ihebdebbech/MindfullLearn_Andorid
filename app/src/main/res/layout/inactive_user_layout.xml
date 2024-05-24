@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#3F3E43">
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="800px"
+        android:layout_height="800px"
+        android:src="@drawable/blacklogo"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="200px"
+        android:layout_centerHorizontal="true"
+
+        />
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Deactivated"
+        android:textSize="33sp"
+        android:layout_centerVertical="true"
+
+
+        android:textColor="#DEE529"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:fontFamily="@font/nimbussanl_bol"/>
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your account is currently inactive. Please contact support for assistance."
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:fontFamily="@font/nimbussanl_bolita"/>
+    <Button
+        android:id="@+id/goBackButton"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/nimbussanl_reg"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/landingpageloginbutton"
+        android:textColor="@android:color/white"/>
+    <!-- You can add more elements as needed, such as buttons, images, etc. -->
+
+</RelativeLayout>
